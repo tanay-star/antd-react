@@ -1,6 +1,7 @@
 import React from 'react'
 import './MainLayout.css'
 import MyTable from '../MyTable'
+import MyTabs from '../MyTabs'
 
 //importing from ant design
 import { Layout, Menu, Breadcrumb } from 'antd'
@@ -92,6 +93,7 @@ const MainLayout = () => {
             <Title level={2} style={{ fontWeight: 'bold' }}>
               My Jobs
             </Title>
+            <MyTabs />
           </Breadcrumb>
           <Content
             className="site-layout-background"
