@@ -1,5 +1,7 @@
 import React from 'react'
+//importing ant components
 import { Table } from 'antd'
+import { Tag } from 'antd'
 
 const columns = [
   {
@@ -24,6 +26,10 @@ const columns = [
     title: 'QTY',
     dataIndex: 'qty',
   },
+  {
+    title: 'STATUS',
+    dataIndex: 'status',
+  },
 ]
 
 const data = []
@@ -35,6 +41,7 @@ for (let i = 0; i < 100; i++) {
     address: `London, Park Lane no. ${i}`,
     jobid: i,
     qty: i,
+    status: <Tag color="#108ee9">Waiting</Tag>,
   })
 }
 
